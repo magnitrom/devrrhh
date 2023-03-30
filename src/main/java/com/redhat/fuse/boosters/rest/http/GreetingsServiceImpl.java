@@ -13,4 +13,8 @@ public class GreetingsServiceImpl implements GreetingsService {
         return new Greetings( THE_GREETINGS + name );
     }
 
+    public String getHolaMundo(@Header("name") String name){
+        return "Hola "+ name;
+    }
+
 }

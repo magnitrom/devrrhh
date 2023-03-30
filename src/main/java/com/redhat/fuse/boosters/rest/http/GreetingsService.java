@@ -12,5 +12,6 @@ public interface GreetingsService {
      * @return a string greetings
      */
     Greetings getGreetings( String name);
+    String getHolaMundo( String name);
 
 }
