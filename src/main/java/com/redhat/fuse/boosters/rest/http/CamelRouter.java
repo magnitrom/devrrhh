@@ -46,7 +46,7 @@ public class CamelRouter extends RouteBuilder {
         
         from("direct:helloWorldImpl").description("Implementacion de Hola Mundo")
         .streamCaching()
-        .to("bean:greetingsService?method=getHolaMundo");  
+        .to("bean:holaMundoService?method=getHolaMundo");  
     }
 
 }
